@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  box-sizing: content-box;
+  padding: 6px;
+  background: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--color-basic100);
+}
+
+.logoImg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.logoPlaceholder {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+}

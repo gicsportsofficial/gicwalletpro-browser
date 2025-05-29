@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 40px 60px;
+  overflow: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

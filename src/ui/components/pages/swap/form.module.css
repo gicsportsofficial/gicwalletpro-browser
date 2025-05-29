@@ -1,0 +1,323 @@
+.root {
+  position: relative;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding: 12px 14px;
+}
+
+.swapDirectionBtnWrapper {
+  position: relative;
+  z-index: 1;
+  margin: -11px 14px;
+}
+
+.swapDirectionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #edf0f4;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swapDirectionBtn:not(:disabled):hover {
+  background: #edf0f4;
+}
+
+.swapDirectionBtn:disabled {
+  background: #f8f9fb;
+  cursor: not-allowed;
+}
+
+.swapDirectionBtnIcon {
+  color: #9ba6b2;
+}
+
+.toAmount {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background: #fff;
+  border: solid 1px var(--color-basic100);
+  border-radius: 4px;
+}
+
+.toAmountHead {
+  display: flex;
+}
+
+.toAmountLabel {
+  flex: 1 1 0;
+  overflow: hidden;
+  color: var(--color-basic500);
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.toAmountBalance {
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.toAmountSelect {
+  margin-left: -6px;
+}
+
+.toAmountCards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.toAmountCard {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 14px;
+  background: none;
+  border: solid 1px var(--color-basic100);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toAmountCard:hover {
+  border-color: var(--color-submit200);
+}
+
+.toAmountCard.toAmountCardSelected {
+  border-color: var(--color-submit400);
+}
+
+.toAmountCardVendor {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.toAmountCardVendorLogo {
+  width: 24px;
+  height: 24px;
+  margin: 4px 0;
+}
+
+.toAmountCardVendorLabel {
+  font-weight: bold;
+}
+
+.toAmountCardValue {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.toAmountCardFormattedValue {
+  overflow: hidden;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.toAmountCardUsdAmount {
+  color: var(--color-basic500);
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.toAmountCardError {
+  color: var(--color-basic500);
+}
+
+.toAmountCardBadge {
+  position: absolute;
+  top: -8px;
+  left: -1px;
+  padding: 1px 8px;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 11px;
+  background: #0155ff;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+}
+
+.slippageToleranceBtn {
+  margin-right: 8px;
+  color: var(--color-basic500);
+  vertical-align: bottom;
+  background: none;
+  cursor: pointer;
+}
+
+.slippageToleranceBtn:hover {
+  color: #000;
+}
+
+.slippageToleranceBtnIcon {
+  vertical-align: middle;
+}
+
+.swapPriceDirectionBtn {
+  margin-right: 8px;
+  color: var(--color-basic500);
+  background: none;
+  cursor: pointer;
+}
+
+.swapPriceDirectionBtn:hover {
+  color: #000;
+}
+
+.swapPriceDirectionBtnIcon {
+  vertical-align: middle;
+}
+
+.error {
+  margin-top: 8px;
+  overflow: auto;
+  color: #e5494d;
+  font-size: 12px;
+}
+
+.summary {
+  font-size: 12px;
+}
+
+.summary:not(:first-child) {
+  margin-top: 1em;
+}
+
+.summary:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.summaryRow {
+  display: flex;
+  gap: 1em;
+  white-space: nowrap;
+}
+
+.summaryRow + .summaryRow {
+  margin-top: 1em;
+}
+
+.summaryRowCenter {
+  align-items: center;
+}
+
+.summaryLabel {
+  flex: 0 0 auto;
+  padding-left: 0;
+  color: #9ba6b2;
+  font-weight: 300;
+}
+
+.summaryValue {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: right;
+}
+
+.summaryValueText {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.summaryTooltipTarget {
+  display: inline-block;
+  border-bottom: 1px dotted;
+}
+
+.tooltipContent {
+  max-width: calc(100vw - 14px * 2);
+}
+
+.slippageToleranceModalTitle {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.slippageToleranceModalDescription {
+  margin-bottom: 10px;
+}
+
+.slippageToleranceControl {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid var(--color-submit400);
+  border-radius: 10px;
+}
+
+.slippageToleranceInput {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.slippageToleranceLabel {
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.slippageToleranceLabel:not(:first-of-type) {
+  border-left: 1px solid var(--color-submit400);
+}
+
+.slippageToleranceInput:hover + .slippageToleranceLabel {
+  background-color: var(--color-basic100);
+}
+
+.slippageToleranceInput:checked + .slippageToleranceLabel {
+  color: var(--color-white);
+  background-color: var(--color-submit400);
+}
+
+.route {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.routeItemArrow,
+.routeItemName {
+  flex: 0 0 auto;
+}
+
+.routeItemArrow {
+  width: 7px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.stickyBottomPanel {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  padding: 14px;
+  background: #fff;
+  border-top: 1px solid #edf0f4;
+}
+
+.stickyBottomPanelError {
+  margin-bottom: 8px;
+  overflow: auto;
+  color: #e5494d;
+  font-size: 12px;
+}

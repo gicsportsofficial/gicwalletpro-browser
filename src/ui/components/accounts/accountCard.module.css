@@ -1,0 +1,57 @@
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 14px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(155, 166, 178, 0.4);
+  cursor: pointer;
+}
+
+.accountInfo {
+  display: flex;
+}
+
+.accountInfoText {
+  margin-left: 14px;
+  padding-right: 30px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.accountName {
+  margin-bottom: 8px;
+  overflow: hidden;
+  color: #9ba6b2;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.selectableOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.infoButton {
+  position: relative;
+  margin-left: auto;
+  background: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.infoIcon {
+  width: 28px;
+  vertical-align: middle;
+  fill: #dae1e9;
+}
+
+.infoIcon:hover {
+  fill: #9ba6b2;
+}

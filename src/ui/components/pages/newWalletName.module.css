@@ -1,0 +1,21 @@
+.content {
+  position: relative;
+  display: block;
+  height: calc(100% - 180px);
+  margin: 84px 60px 0;
+}
+
+.greyLine {
+  margin: 0 -64px 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.continueBtn {
+  margin-top: 40px;
+  margin-bottom: 42px;
+}

@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "Gic Wallet Pro",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "Keeper",
+    "description": "The short name of the application"
+  },
+  "appDescription": {
+    "message": "Gic Wallet Pro is your entry point to the Gic Blockchain",
+    "description": "The description of the application"
+  }
+}

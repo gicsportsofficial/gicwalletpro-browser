@@ -1,0 +1,91 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 329px;
+  height: 572px;
+  padding: 14px 0;
+  background: var(--color-white);
+  border-radius: 4px;
+}
+
+.header {
+  padding: 0 14px;
+}
+
+.title {
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.listViewport {
+  flex: 1 1 0;
+  margin-top: 14px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.listItem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.listItemSelected,
+.listItem:not(.listItemDisabled):hover {
+  background: var(--color-basic100);
+}
+
+.listItemDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.listItemTooltipContent {
+  max-width: calc(100vw - 14px * 2);
+}
+
+.logo {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logoPlaceholder {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.listItemName {
+  flex: 1 1 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.listItemBalance {
+  flex: 0 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
